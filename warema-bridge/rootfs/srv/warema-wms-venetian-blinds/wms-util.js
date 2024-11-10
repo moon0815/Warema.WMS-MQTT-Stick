@@ -269,7 +269,7 @@ function decodeStickCmd(rcv) {
                 params.unknown_2 = payload.substr(6, 6);
                 params.unknown_3 = payload.substr(14, 2);
                 params.rain = payload.substr(16, 2) === 'C8';
-                params.temp = parseInt(payload.substr(18, 2), 16) / 2 - 38; // Änderung 35 auf 38
+                params.temp = parseInt(payload.substr(18, 2), 16) / 2 - 45; // Änderung 35 auf 38
                 params.unknown_4 = payload.substr(20);
                 break;
             case '8020':
